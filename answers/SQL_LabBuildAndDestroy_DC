@@ -17,9 +17,28 @@ exercise 6 - Add a column of type DATE called Birthday to the Users table.
 Alter table Users ADD Birthday Date NOT NULL;
 
 exercise 7 - Delete the column Birthday from the Users table.
-Alter table Users ADD Birthday Date NOT NULL
+Alter table Users DROP Column Birthday;
 
 exercise 8 - Insert a new record in the Students table.
+SELECT * FROM Students WHERE City <> 'Philadelphia';
+
+create table Students(
+StudentName VARCHAR(100) NOT NULL,
+Address VARCHAR(50) NOT NULL,
+City VARCHAR(50) NOT NULL,
+PostalCode VARCHAR(50) NOT NULL,
+Country VARCHAR(50) NOT NULL
+);
+
 insert into Students Values ('Jane Doe', '57 Union St', 'Glasgow', 'G13RB', 'Scotland');
 
+exercise 9 - Use the NOT keyword to select all records in the Students table where City is NOT "Philadelphia".
+insert into Students Values ('John Carter', '604 Tasker', 'Philadelphia', '19147', 'USA');
+insert into Students Values ('Jessica Rok', '1230 Dickenson', 'Philadelphia', '19149', 'USA');
+insert into Students Values ('Steven Vo', '758 Riot', 'Trenton', '28138', 'USA');
+insert into Students Values ('Alison Brei', '1230 Valo', 'Treton', '29140', 'USA');
+
+//Shows All contents of tables
+select* from Students;
+SELECT * FROM Students WHERE City <> 'Philadelphia';
 
