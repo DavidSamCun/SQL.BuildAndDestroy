@@ -1,0 +1,25 @@
+exercise 1 - create a new schema/database
+create database myNewDB;
+
+exercise 2 - delete database
+drop database myNewDB;
+
+exercise 3 - Write the correct SQL statement to create a new table called Users, with an int field called UserID, and the following varchar fields of size 255: LastName, FirstName, Address, City
+create table Users  ( UserID INTEGER PRIMARY KEY NOT NULL Auto_Increment, LastName varchar(255), FirstName varchar(255), Address varchar(255), City varchar(255));
+
+exercise 4 - Write the correct SQL statement to delete a table called Users.
+DROP TABLE Users;
+
+exercise 5 - Use the TRUNCATE statement to delete all data inside the Users table.
+truncate table Users;
+
+exercise 6 - Add a column of type DATE called Birthday to the Users table.
+Alter table Users ADD Birthday Date NOT NULL;
+
+exercise 7 - Delete the column Birthday from the Users table.
+Alter table Users ADD Birthday Date NOT NULL
+
+exercise 8 - Insert a new record in the Students table.
+insert into Students Values ('Jane Doe', '57 Union St', 'Glasgow', 'G13RB', 'Scotland');
+
+
