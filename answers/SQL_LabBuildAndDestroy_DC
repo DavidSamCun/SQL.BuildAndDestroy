@@ -23,6 +23,7 @@ exercise 8 - Insert a new record in the Students table.
 SELECT * FROM Students WHERE City <> 'Philadelphia';
 
 create table Students(
+id INTEGER PRIMARY KEY NOT NULL AUTO_INCREMENT,
 StudentName VARCHAR(100) NOT NULL,
 Address VARCHAR(50),
 City VARCHAR(50),
@@ -63,3 +64,19 @@ exercise 15 - Select all records from the Students where the PostalCode column i
 SELECT * from Students Where PostalCode <> 'Null';
 
 exercise 16 - Update the City column of all records in the Students table and set it to "Edinburgh".
+UPDATE Students Set City = 'Edinburgh';
+
+exercise 17 - Set the value of the City columns to "Edinburgh", but only the ones where the Country column has the value "Scotland".
+UPDATE Students Set City = 'Edinburgh' WHERE Country = 'Scotland';
+
+exercise 18 - Update the City value and the Country value to "Edinburgh", "Scotland" in the Students table, for the Student whose ID is 35.
+UPDATE Students Set City = 'Edinburgh', Country = 'Scotland' Where id = 35;
+
+exercise 19 - Delete all the records from the Students table where the Country value is "Scotland".
+DELETE FROM Students16 WHERE Country = 'Scotland';
+
+exercise 20 - Delete all the records from the Students table.
+truncate table Students16;
+
+
+
