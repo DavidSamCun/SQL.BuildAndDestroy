@@ -20,6 +20,7 @@ exercise 7 - Delete the column Birthday from the Users table.
 Alter table Users DROP Column Birthday;
 
 exercise 8 - Insert a new record in the Students table.
+insert into Students Values ('Jane Doe', '57 Union St', 'Glasgow', 'G13RB', 'Scotland');
 SELECT * FROM Students WHERE City <> 'Philadelphia';
 
 create table Students(

@@ -1,1 +1,1 @@
-SELECT * FROM Students WHERE City <> 'Philadelphia';
+insert into Students Values ('Jane Doe', '57 Union St', 'Glasgow', 'G13RB', 'Scotland');
